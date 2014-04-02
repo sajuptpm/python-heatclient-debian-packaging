@@ -88,7 +88,7 @@ Notes
 
 1.
 In this packaging script, I could not find any statement which creating the file /usr/bin/heat. But in the resultant debian package we can see that file. How ?
-<p>
+
 This is where it happens:
 
 https://github.com/openstack/python-heatclient/blob/master/setup.cfg#L26
@@ -99,7 +99,7 @@ statement in setup.cfg, "pythons setup.py install" creates
 /usr/bin/heat.
 
 See http://docs.openstack.org/developer/pbr/#entry-points
-</p>
+
 
 
 
