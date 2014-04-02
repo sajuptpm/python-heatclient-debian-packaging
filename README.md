@@ -1,45 +1,83 @@
-python-heatclient-debian-packaging
-==================================
-
-python heatclient debian packaging script
-
-
 How to Jenkins Create a Debian Package for OpenStack python-heatclient
 ========================================================================
 
-a)
+1.
 Get debian packaging script for python-heatclient project.
-#sudo apt-get install devscripts
+<p>
+<code>sudo apt-get install devscripts </code>
+</p>
 
+2.
 Goto following link and locate your project's *.dsc file
+<p>
 http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/
+</p>
 
+3.
 Download the packaging script and extract it
-#dget http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-heatclient/python-heatclient_0.2.8-0ubuntu1~cloud0.dsc
-#tar -xzf python-heatclient_0.2.8-0ubuntu1~cloud0.debian.tar.gz
-#cd debian
-#ls
+<p><code>
+dget http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/p/python-heatclient/python-heatclient_0.2.8-0ubuntu1~cloud0.dsc
+</code></p>
 
-b)
+<p><code>
+tar -xzf python-heatclient_0.2.8-0ubuntu1~cloud0.debian.tar.gz
+</code></p>
+
+<p><code>
+cd debian
+</code></p>
+
+<p><code>
+ls
+</code></p>
+
+4.
 Clone the source code of python-heatclient
-#git clone https://github.com/sajuptpm/python-heatclient.git
-#cd python-heatclient
+<p><code>
+git clone https://github.com/sajuptpm/python-heatclient.git
+</code></p>
 
+<p><code>
+cd python-heatclient
+</code></p>
+
+5.
 Create a new branch named "packaging" if not exist and switch to that branch.
-#git checkout -b packaging
+<p><code>
+git checkout -b packaging
+</code></p>
 
-c)
+6.
 Copy debian folder (packaging script) to "packaging" branch
-#cp -r ../../debian .
-#git status
-#git add debian
-#git commit debian
-#git status
+<p><code>
+cp -r ../../debian .
+</code></p>
 
-d)
+<p><code>
+git status
+</code></p>
+
+<p><code>
+git add debian
+</code></p>
+
+<p><code>
+git commit debian
+</code></p>
+
+<p><code>
+git status
+</code></p>
+
+7.
 Push packaging branch to remote to remote github repo
-#git remote -v
-#git push origin packaging
+<p><code>
+git remote -v
+</code></p>
 
-e)
+<p><code>
+git push origin packaging
+</code></p>
+
+8.
 Create build job in jenkins
