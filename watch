@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/%7E/~/" https://launchpad.net/python-heatclient/+download https://launchpad.net/python-heatclient/.*/.*/.*/python-heatclient-(.*)\.tar\.gz
+http://tarballs.openstack.org/python-heatclient/ python-heatclient-(\d.*).tar.gz
+http://pypi.python.org/packages/source/p/python-heatclient/python-heatclient-(.*).tar.gz

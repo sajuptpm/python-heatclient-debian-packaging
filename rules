@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+
+%:
+	dh $@  --with python2
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f heatclient/versioninfo
+	rm -rf setuptools_git-*-py*.egg/
+
+override_dh_install:
+	dh_install
+	rm -rf $(CURDIR)/debian/python-heatclient/usr/heatclient
+
+override_dh_auto_test:
+	testr init && testr run
