@@ -98,10 +98,9 @@ scripts like this that calls a specific python method. Because of that
 statement in setup.cfg, "pythons setup.py install" creates
 /usr/bin/heat.
 
-See http://docs.openstack.org/developer/pbr/#entry-points
-<p>
+http://docs.openstack.org/developer/pbr/#entry-points  
 http://guide.python-distribute.org/creation.html#entry-points
-</p>
+
 
 
 
