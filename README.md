@@ -99,7 +99,9 @@ statement in setup.cfg, "pythons setup.py install" creates
 /usr/bin/heat.
 
 See http://docs.openstack.org/developer/pbr/#entry-points
-
+<p>
+http://guide.python-distribute.org/creation.html#entry-points
+</p>
 
 
 
