@@ -89,9 +89,8 @@ Notes
 1.
 In this packaging script, I could not find any statement which creating the file /usr/bin/heat. But in the resultant debian package we can see that file. How ?
 
-This is where it happens:
-
-https://github.com/openstack/python-heatclient/blob/master/setup.cfg#L26
+This is where it happens:  
+https://github.com/openstack/python-heatclient/blob/master/setup.cfg#L26 
 
 Python's distutils has a "console-scripts" functionality that creates
 scripts like this that calls a specific python method. Because of that
