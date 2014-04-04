@@ -85,7 +85,7 @@ git push origin packaging
 
 8.
 Create build job in jenkins.
-
+https://www.youtube.com/watch?v=PJi8jjpttrI
 
 Notes
 ----------
