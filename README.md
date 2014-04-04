@@ -12,6 +12,10 @@ Goto following link and locate your project's *.dsc file
 <p>
 http://ubuntu-cloud.archive.canonical.com/ubuntu/pool/main/
 </p>
+OR
+<code>
+sudo apt-get source python-heatclient
+</code>
 
 3.
 Download the packaging script and extract it
